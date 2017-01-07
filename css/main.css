@@ -1,0 +1,223 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #000;
+	color: white;
+	font-family: Tahoma, Arial;
+	font-size: 14px;
+}
+
+.wraper {
+	max-height: 1116px;
+	max-width: 1920px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+ul,
+li {
+	margin: 0;
+    padding: 0;
+    list-style-type: none;   
+}
+
+/*================= NAVIGATION_MENU==================*/
+nav {
+	background-color: #074f8f;
+	background-image: url(../img/menu_bg.png);
+	background-repeat: repeat-x;
+	max-width: 1215px;
+	margin: 0 auto;
+}
+
+nav div {
+	float: right;
+	margin-right: 20px;
+}
+nav ul li {
+	display: block;
+	height: 36px;
+	float: left;
+	/*white-space: nowrap;*/
+}
+nav ul li a {
+	position: relative;
+	display: block;
+	line-height: 36px;
+	text-align: center;
+	padding: 0 11px;
+	color: #4299d2;
+	border: 1px solid rgba(0, 0, 0, 0);
+}
+
+nav ul li a span + span {
+	display: none;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+
+nav .first_menu ul li:hover a {
+	background: #4eabda;
+}
+
+
+	/*box-shadow: 1px -1px #4299d2;*/
+}
+
+nav .first_menu ul li:hover a span:first-child {
+	visibility: hidden;
+}
+
+nav .first_menu ul li:hover a span + span {
+	position: absolute;
+	display: block;
+	font-weight: bold;
+	color: white;
+}
+
+.nav_divide {
+	display: inline-block;
+	height: 36px;
+	width: 1px;
+	line-height: 36px;
+	float: right;
+	margin: 3px 0 0;
+	background-image: url(../img/menu_v_line.gif);
+	background-repeat: no-repeat; 
+}
+
+#flag {
+	background-image: url(../img/flag.png);
+	background-repeat: no-repeat;
+	padding-left: 50px;
+	background-position: 15px 0;
+	padding-right: 18px;
+}
+
+.first_menu {
+	margin-right: 10px;
+}
+
+.second_menu {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.curent_page {
+	color: #fff;
+	background: linear-gradient(to top, #2e7ac4 , #51b1dc);
+	border: 1px solid #4299d2;
+}
+
+nav .second_menu ul li:hover a {
+	color: #fff;
+	background: linear-gradient(to top, #2e7ac4 , #51b1dc);
+	border: 1px solid #4299d2;	
+}
+
+/*================= /NAVIGATION_MENU==================*/
+
+main {
+	display: block;
+	max-width: 1215px;
+	height: 1080px;
+	background: grey url(../img/bg.jpg) no-repeat;
+	background-position: -350px 0;
+	position: relative;
+	margin: 0 auto;
+}
+
+.center {
+	position: relative;
+	margin: 0 auto;
+	/*border: 1px solid red;*/
+	height: 30%;
+	width: 560px;
+} 
+
+form {
+	position: absolute;
+	width: 560px;
+	height: 612px;
+	background-image: url("../img/form_bg.png");
+	background-repeat: round;
+	text-align: center;
+	transform: translate(0%, 35%);
+	/*border: 1px solid green;*/
+	color: #ccc;
+}
+
+form span {
+	font-size: 24px;
+	line-height: 60px;
+}
+
+form a {
+	display: block;
+	margin: 35px 0 13px;
+}
+
+br + p {
+	color: #999999;
+}
+
+input + p,
+input + p + p {
+	font-size: 11px;
+}
+
+li input {
+	margin: 6px 0;
+	background-color: #101010;
+	height: 34px;
+	width: 276px;
+	border-style: none;
+	padding-left: 18px;
+	border-bottom: 1px solid #474747; 
+}
+
+form label {
+	display: inline-block;
+	/*border: 1px solid yellow;*/
+	vertical-align: center;
+	text-align: left;
+	margin: 20px 0 25px -60px;
+}
+
+form input[type=submit] {
+	background-image: url(../img/submit_button.png);
+	background-repeat: none;
+	background-position: -3px -3px;
+	border: none;
+	border-radius: 4px; 
+	color: #fff;
+	height: 35px;
+	width: 150px; 
+}  
+
+.current_input {
+	background-color: #1b5288;
+	border-bottom: 1px solid #689bcc;
+	box-shadow: 0 0 20px 5px #699bcd;
+}
+
+::-webkit-input-placeholder {color: #ccc;}
+::-moz-placeholder          {color: #ccc;} /* Firefox 19+ */
+:-moz-placeholder           {color: #ccc;} /* Firefox 18- */
+:-ms-input-placeholder      {color: #ccc;}
+
+
+/*Meu YouBike      Vender     Forum      Contato       Ajuda 
+Minhas Ofertas  Ola! Entrar ou Cadastre-se*/
