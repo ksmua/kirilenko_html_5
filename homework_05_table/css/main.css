@@ -1,0 +1,12 @@
+table {
+	border-collapse: collapse;
+}
+
+td {
+	width: 40px;
+	border: 5px solid black;
+}
+
+.w80 {
+	width: 80px;
+}
